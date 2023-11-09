@@ -11,7 +11,7 @@ while(contador < plank.length){
 
         tocaSom (idAudio); 
     }
-    contador = contador + 1
+    contador = contador + 1;
     console.log(contador);
     
 }
