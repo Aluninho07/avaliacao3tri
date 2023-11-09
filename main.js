@@ -1,1 +1,17 @@
-alert("Olá segundo ano mais lindo desse mundo!!");
+function tocaSom(idElementoAudio){
+document.querySelector(idElementoAudio).play();    
+}
+const plank = document.querySelectorAll("tecla");
+
+let contador = 0;
+while(contador<plank.length){
+    const efeito = plank[contador].classList[1];
+    const idAudio = "#som_"+efeito;
+    plank[contador].onclick = function(){
+        tocaSom("#som_tecla_aplausos");
+        tocaSom(idAudio); 
+    }
+    contador = contador + 1
+    console.log(contador);
+    
+}
