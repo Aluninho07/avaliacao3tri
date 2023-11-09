@@ -8,7 +8,6 @@ while(contador<plank.length){
     const efeito = plank[contador].classList[1];
     const idAudio = "#som_"+efeito;
     plank[contador].onclick = function(){
-
         tocaSom(idAudio); 
     }
     contador = contador + 1
